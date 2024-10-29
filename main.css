@@ -12,7 +12,7 @@ body {
 /* Fonts descarregades */
 @font-face {
   font-family: "AMSTERDAM SERIF";
-  src: url("../fonts/AMSTERDAM SERIF_personal Use.ttf") format("truetype");
+  src: url("fonts/AMSTERDAM SERIF_personal Use.ttf") format("truetype");
 }
 
 /* Headers */
@@ -157,7 +157,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../img/gal/caravaggio1.webp");
+  background-image: url("img/gal/caravaggio1.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat; 
@@ -168,7 +168,7 @@ hr {
 
 .fotos_rem {
   min-height: 120%;
-  background-image: url("../img/gal/rem1.webp");
+  background-image: url("img/gal/rem1.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ hr {
 
 .fotos_rub {
   min-height: 120%;
-  background-image: url("../img/gal/rub1.webp");
+  background-image: url("img/gal/rub1.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ hr {
 
 .fotos_ver {
   min-height: 120%;
-  background-image: url("../img/gal/vermeer.webp");
+  background-image: url("img/gal/vermeer.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@ hr {
 
 .fotos_vel {
   min-height: 120%;
-  background-image: url("../img/gal/velazquez.webp");
+  background-image: url("img/gal/velazquez.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
