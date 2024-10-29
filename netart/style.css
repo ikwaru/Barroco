@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    overflow: hidden;
+  }
+
+  #fulllscreen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fulllscreen canvas {
+    position:relative;
+    object-fit: contain;
+    max-height: 300px !important;
+    max-width: 90%;
+    padding-bottom: 2rem;
+  }
+
+
+
+  input {
+    top: 95% !important;
+    left: 53% !important;
+    font-size: 0.5rem;
+
+  }

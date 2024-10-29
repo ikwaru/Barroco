@@ -1,0 +1,473 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+
+
+/* Fonts descarregades */
+@font-face {
+  font-family: "AMSTERDAM SERIF";
+  src: url("../fonts/AMSTERDAM SERIF_personal Use.ttf") format("truetype");
+}
+
+/* Headers */
+
+h1 {
+  font-family:"AMSTERDAM SERIF";
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  font-variant: small-caps;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-family:"AMSTERDAM SERIF";
+  font-size: 2.5rem;
+  font-variant: small-caps;
+}
+
+h2 {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+/* Text */
+p {
+  font-family: "MS Reference Sans Serif";
+  font-size: 0.9em;
+}
+
+.titol {
+  font-variant: small-caps;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfb3b3; 
+}
+
+/* --------- Disseny de la pàgina --------- */
+
+.pagina {
+  height: 100vh;
+  display: flex;
+}
+
+/* -- Navegació -- */
+
+.home {
+  position: sticky;
+  top: 0%;
+}
+
+.home-icono {
+  width: 10%;
+  margin: 1rem;
+}
+
+.barra {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #f5f5f5;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.navegacio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navegacio li {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.navegacio a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.navegacio img {
+  width: 50%;
+  height: auto; 
+}
+
+
+/* -- Columna esquerra (imatges) -- */
+.columna1 {
+  width: 50%;
+  height: 100%;
+  text-align: justify;    
+  position: relative;
+  overflow-y: scroll;
+}
+
+.artista {
+  position: relative;
+}
+
+hr {
+  height: 3px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+/* Imatges del fons */
+
+.fotos_car {
+  min-height: 120%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/gal/caravaggio1.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+.fotos_rem {
+  min-height: 120%;
+  background-image: url("../img/gal/rem1.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  filter: brightness(30%);
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fotos_rub {
+  min-height: 120%;
+  background-image: url("../img/gal/rub1.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  filter: brightness(30%);
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fotos_ver {
+  min-height: 120%;
+  background-image: url("../img/gal/vermeer.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  filter: brightness(30%);
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fotos_vel {
+  min-height: 120%;
+  background-image: url("../img/gal/velazquez.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  filter: brightness(30%);
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Text */
+
+.columna1 h2 {
+  color: #f5f5f5;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.columna1 h3 {
+  color: #f5f5f5;
+  font-family: "Garamond";
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Galeria */
+
+.fila {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.galeria img {
+  padding: 0.5rem;
+  user-select: none;
+}
+
+.fila img {
+  width: 30%;
+  height: 30%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.fila img:hover {
+  opacity: 10%;
+  filter: blur(8px);
+  cursor: zoom-in;
+} 
+
+.galeriagran {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeriagran-imatge {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  object-fit: contain;
+  
+}
+
+.tancar {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.títol-obra {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%); 
+  color: #fff;
+  font-family: "Garamond";
+  font-size: 1rem; 
+  text-align: center;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+
+
+/* -- Columna dreta (text informatiu) -- */
+
+
+
+.columna2 {
+  background-color: #f5f5f5;
+  width: 40%;
+  height: 100%;
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sketch-container {
+  text-align: center;
+  align-items: center;
+}
+
+#defaultCanvas0 {
+  width: 70% !important;
+  height: 70% !important;
+  border-radius: 0.5rem;
+}
+
+#seccio0 h1 {
+  text-align: center;
+}
+
+.columna2 h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.columna2 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.columna2 p {
+  padding: 0 2rem 0 2rem;
+  
+}
+
+#uploadContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.firma {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.fotos-dret {
+  width: 40%;
+  float: right;
+  margin: 0 2rem 0.5rem 1rem;
+}
+
+.fotos-esq {
+  width: 40%;
+  float: left;
+  margin: 0 1rem 0.5rem 2rem;
+}
+
+#seccio7 p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#fotogran {
+  width: 50%;
+  height: 50%;
+}
+
+
+
+
+/* --------- Mediaqueries --------- */
+
+
+@media only screen and (max-width: 600px) {
+
+  .columna2 h1 {
+    font-size: 2rem !important;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .pagina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h1 {
+        font-size: 2rem !important;
+    }
+
+    .barra {
+      position: sticky;
+      top: 0;
+      width: 100%; 
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+      white-space: nowrap;
+      z-index: 100;
+  }
+
+    .navegacio {
+        flex-direction: row; 
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .navegacio li {
+        margin: 0;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .navegacio a {
+        padding: 0;
+    }
+
+    .navegacio img {
+        width: 90%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .columna1, .columna2 {
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+}
