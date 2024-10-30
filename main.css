@@ -29,9 +29,6 @@ h2 {
   font-family:"AMSTERDAM SERIF";
   font-size: 2.5rem;
   font-variant: small-caps;
-}
-
-h2 {
   padding: 0.5rem;
   margin: 1rem;
 }
@@ -242,7 +239,7 @@ hr {
   font-family: "AMSTERDAM SERIF";
   font-variant: small-caps;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
