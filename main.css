@@ -364,6 +364,18 @@ hr {
   
 }
 
+.columna2 a {
+  padding: 0 2rem 0 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.columna2 a:hover {
+  padding: 0 2rem 0 2rem;
+  color: rgb(109, 37, 37);
+}
+
 #uploadContainer {
   display: flex;
   justify-content: center;
